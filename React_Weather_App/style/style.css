@@ -1,0 +1,64 @@
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Lora', serif;
+*/
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+a {
+  color: black !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+.input-group {
+  margin: 20px 0px;
+}
+
+svg {
+  height: 150px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  width: 250px;
+  height: 200px;
+}
+
+table {
+  margin-bottom: 75px !important;
+}
+
+.appheader {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  margin-top: 10px;
+}
+.appheader:hover {
+  animation: color_change;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+@keyframes color_change {
+  0% { color: black; }
+  50% { color: #3e92cc; }
+  100% { color: black; }
+}
+
+footer {
+  position: fixed;
+  background-color: #efefef;
+  text-align: center;
+  font-family: 'Lora', serif;
+  right: 0; /* Full width */
+  bottom: 0;
+  left: 0; /* Full width */
+  margin-top: 1px !important;
+}
+
+.fa-github {
+  padding: 5px;
+}
