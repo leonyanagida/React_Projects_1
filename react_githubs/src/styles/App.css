@@ -1,0 +1,172 @@
+
+/*
+font-family: 'Rosario', sans-serif;
+font-family: 'Secular One', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'VT323', monospace;
+*/
+
+body {
+  background-color: #1b1b1b !important;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+.green {
+  color: #1db954;
+}
+.title {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  max-width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0 5px 0;
+  letter-spacing: 0.2px;
+}
+.searchBar {
+  max-width: 350px;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  left: 0;
+  right: 0;
+}
+.fa-search {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: gray;
+}
+.card {
+  background: #131112 !important;
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+  overflow: hidden;
+  border: none !important; /* Removes default border */
+  box-shadow: 0 -10px 170px 0 rgba(239, 241, 243, 0.1);
+  /* Box shadow 170px to give white glow */
+}
+.background {
+  max-width: 370px;
+  height: 200px;
+  overflow: hidden;
+
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 82%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 82%);
+}
+.user {
+  position: relative; /* puts face and button on top of the background */
+  margin-top: -100px;
+}
+.face {
+  position: relative;
+  display: inline-block;
+  background-color: gray;
+  width: 105px;
+  height: 105px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.buttons {
+  text-align: right;
+  padding: 10px 23px 0 20px;
+  margin-top: -50px;
+}
+.githubBtn {
+  display: inline-block;
+  background-color: rgba(29, 185, 84, 0.9);
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  letter-spacing: 1.4px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+  border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+}
+.githubBtn:hover {
+  background-color: rgba(29, 185, 84, 1);
+  border: 1px solid #1db954 !important;
+  color: white;
+}
+@media screen and (max-width: 279px) {
+  .buttons {
+    margin-top: 0px !important;
+    text-align: left;
+    margin-left: 6px;
+  }
+}
+.textBox {
+  margin-top: 30px;
+}
+.username {
+  text-align: left;
+  font-family: 'Rosario', sans-serif;
+  color: white;
+  margin-top: -3px;
+  padding: 0 25px 7px 25px;
+  letter-spacing: 0.3px;
+}
+.name {
+  font-family: 'Rosario', sans-serif;
+  text-align: left;
+  font-weight: bold;
+  color:#1db954;
+  letter-spacing: 0.7px;
+  padding: 0 25px 0 25px;
+}
+.bio {
+  text-align: left;
+  font-family: 'Rosario', sans-serif;
+  color: white;
+  margin-bottom: 12px;
+  padding: 0 25px 0 25px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.location {
+  text-align: left;
+  font-family: 'Rosario', sans-serif;
+  color: white;
+  margin-bottom: 5px;
+  padding: 0 25px 0 25px;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+}
+.followers {
+  text-align: left;
+  font-family: 'Rosario', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 25px 0 25px;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+}
+footer {
+  text-align: center;
+}
+.fa-github {
+  color: gray;
+  margin-top: 7px;
+}
+
+/* ERRORS */
+.userError {
+  text-align: center;
+}
+.errorTxt {
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.error1 {
+  max-width: 350px;
+}
