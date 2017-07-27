@@ -8,7 +8,7 @@ class SearchBar extends Component {
       // State is empty (will be filled with userInput)
       userInput: ''
     };
-    
+
     this.onInputChange = this.onInputChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
@@ -43,7 +43,7 @@ class SearchBar extends Component {
             <span className="input-group-btn">
               <button
                 type="submit"
-                className="btn btn-secondary"
+                className="btn searchBtn"
                 onClick={ this.handleClick }>
                 <i className="fa fa-search" aria-hidden="true"></i>
               </button>

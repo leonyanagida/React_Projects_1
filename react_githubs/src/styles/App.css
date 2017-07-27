@@ -35,6 +35,9 @@ a {
   left: 0;
   right: 0;
 }
+.searchBtn {
+  background-color: black !important;
+}
 .fa-search {
   padding-left: 15px;
   padding-right: 15px;
@@ -151,6 +154,7 @@ a {
 }
 footer {
   text-align: center;
+  margin-bottom: 40px;
 }
 .fa-github {
   color: gray;
