@@ -1,0 +1,148 @@
+
+
+
+
+li {
+  list-style-type: none !important;
+}
+body {
+  background-color: #1b1b1b !important;
+}
+a {
+  color: #FFFFFF !important
+}
+header {
+  margin-top: 10px;
+}
+button {
+  cursor: pointer;
+}
+.react {
+  max-width: 75px;
+}
+.logo {
+  max-width: 75px;
+  /*border: 2px solid black;*/
+}
+.links {
+  /*border: 2px solid blue;*/
+  margin-top: 2px;
+  text-align: right;
+}
+.header {
+  text-align: center;
+  color:  #FFFFFF;
+  padding: 10px;
+}
+.modal-header {
+  background-color: #00A8E8;
+  color: #1b1b1b;
+  margin-right: -0.3px;
+}
+
+.modal-container {
+  margin-top: 30px;
+}
+.searchBar {
+  text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#myContent {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;
+}
+#myContent img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+
+  padding: 7px 7px 4px 7px;
+  /*border: 1px solid red;*/
+}
+@media (max-width: 1200px) {
+  #myContent {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #myContent {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #myContent {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #myContent {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+footer {
+  text-align: center;
+}
+
+/* Error Handlers*/
+.empty {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  margin-bottom: 40px;
+
+  -webkit-animation: delay-text 1s forwards;
+  animation: delay-text 1s forwards;
+  animation-delay: 7s;
+}
+@keyframes delay-text {
+  0% { transform: translateY(100px); }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes delay-text {
+  0% { transform: translateY(100px); }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+}
+
+
+.loading {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+
+  -webkit-animation: fade-in 1s infinite;
+  animation: fade-in 1s infinite;
+
+}
+@keyframes fade-in {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(360deg) }
+}
+@-webkit-keyframes fade-in {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(360deg) }
+}
