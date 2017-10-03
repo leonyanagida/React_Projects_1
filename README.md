@@ -8,4 +8,4 @@ React Weather App: http://littlejohngil-react-weatherapp.surge.sh
 
 React Blog Wall: http://littlejohngil-react-blog.surge.sh
 
-React Github Search App: http://littlejohngil-react-githubapp.surge.sh
+React Github Search App: http://leon-react-githubapp.surge.sh
