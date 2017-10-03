@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import validator from 'validator';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -22,10 +23,17 @@ class SearchBar extends Component {
   handleClick(event) {
     // Prevent submit from refreshing the page
     event.preventDefault();
-
-    this.setState({ userInput: '' });
+		// We must sanitize user input here //
+		// Regex checks for invalid characters //
+		let regexValidate = /\`|\~|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\+|\=|\[|\{|\]|\}|\||\\|\'|\<|\,|\.|\>|\?|\/|\""|\;|\:|\s/;
+		let newInput = '';
+		// Validate using validator package //
+		// Could also be done without a package //
+		newInput = validator.blacklist(this.state.userInput, regexValidate);
+		// If the state is empty do not submit get request //
+		if (validator.isEmpty(newInput)) return;
     // Take the prop and pass it to the onSearchUser function in App.js
-    this.props.onSearchUser(this.state.userInput);
+		this.props.onSearchUser(newInput);
   }
 
   render() {

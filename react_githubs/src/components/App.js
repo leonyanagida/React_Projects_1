@@ -27,8 +27,8 @@ class App extends Component {
        this.setState({ data })
      }).catch((error) => {
        // Handle Error if API fetch fails
-       console.log("Error", error)
-    })
+       console.log("Error", error);
+    });
   }
 
   render() {
