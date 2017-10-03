@@ -12,7 +12,7 @@ class App extends Component {
       data: {}
     };
     // Default Search when the app loads
-    this.searchUser('littlejohngil');
+    this.searchUser('leonyanagida');
   }
 
   searchUser(userInput) {
