@@ -21,14 +21,13 @@ class App extends Component {
 
     // Fetch data from Github API
     fetch(url)
-     .then((res) => res.json())
-     .then((data) => {
-       //console.log(data);
-       this.setState({ data })
-     }).catch((error) => {
-       // Handle Error if API fetch fails
-       console.log("Error", error);
-    });
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ data })
+      }).catch((error) => {
+        // Handle Error if API fetch fails
+        console.log("Error", error);
+      });
   }
 
   render() {
@@ -37,8 +36,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <SearchBar onSearchUser={ userInput => this.searchUser(userInput) }/>
-        <UserCard data={ this.state.data }/>
+        <SearchBar onSearchUser={userInput => this.searchUser(userInput)} />
+        <UserCard data={this.state.data} />
         <Footer />
       </div>
     );
