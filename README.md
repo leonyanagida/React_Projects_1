@@ -4,7 +4,7 @@ Small projects created using React.js
 
 Live Websites:
 
-React Weather App: http://littlejohngil-react-weatherapp.surge.sh
+React Weather App: http://leon-react-weatherapp1.surge.sh
 
 React Blog Wall: http://littlejohngil-react-blog.surge.sh
 
